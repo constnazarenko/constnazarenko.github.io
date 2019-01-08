@@ -1,4 +1,5 @@
 .eslintrc.json
+dist
 blueprints
 jest-setup-files.js
 jest-setup-scripts.js
