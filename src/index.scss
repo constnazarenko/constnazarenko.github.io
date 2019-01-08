@@ -1,0 +1,43 @@
+@mixin flex-container ($direction: row, $justify-content: space-between,
+$align-items: center, $align-content: space-evenly,
+$flex-wrap: wrap, $display: flex) {
+  align-content: $align-content;
+  align-items: $align-items;
+  display: $display;
+  flex-direction: $direction;
+  flex-wrap: $flex-wrap;
+  justify-content: $justify-content;
+}
+
+
+body {
+  padding: 5px;
+}
+
+.clue {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+
+.text-hidden {
+  visibility: hidden;
+}
+
+.text-revealed {
+  animation-duration: 1s;
+  animation-name: fade-in;
+  visibility: visible;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}

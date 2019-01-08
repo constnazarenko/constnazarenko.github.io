@@ -1,0 +1,25 @@
+@import url('~react-vis/dist/style');
+
+.chart-row {
+  animation-duration: 1s;
+  animation-name: toggle-chart;
+  animation-timing-function: ease-in-out;
+  display: none;
+
+
+  &.revealed {
+    animation-duration: 1s;
+    animation-name: toggle-chart;
+    display: table-row;
+  }
+}
+
+@keyframes toggle-chart {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
