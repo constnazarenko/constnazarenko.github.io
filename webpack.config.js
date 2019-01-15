@@ -5,12 +5,14 @@ const webpackDashboard = require('webpack-dashboard/plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 const dist = 'dist';
 
 const devMode = process.env.NODE_ENV !== 'production';
 
 // Plugins objects
+const copyFiles = new CopyWebpackPlugin([ {from:'src/images', to:'images'}  ]);
 const friendlyErrors = new FriendlyErrorsWebpackPlugin();
 const bundleAnalizer = new BundleAnalyzerPlugin();
 const dashboard = new webpackDashboard();
@@ -96,10 +98,12 @@ module.exports = {
                     ]
                 }
             }] },
-            { enforce: "pre", test: /\.js$/, exclude: /node_modules/, use: { loader: "source-map-loader" } }
+            { enforce: "pre", test: /\.js$/, exclude: /node_modules/, use: { loader: "source-map-loader" } },
+            { test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/, exclude: /node_modules/, loader: "file" }
         ]
     },
     plugins: [
+        copyFiles,
         friendlyErrors,
         // bundleAnalizer,
         dashboard,

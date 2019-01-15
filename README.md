@@ -1,2 +1,1 @@
-# This project is some kind of starter of webpack/react/scss to create some examples and such...
-# The goal is to have clean and updated environment to make quick researches.
+# Just a short description of my experience.

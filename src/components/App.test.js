@@ -3,20 +3,16 @@ import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 configure( { adapter: new Adapter() } );
 
-import { App } from './App';
+import App from './App';
 import { posts } from '../data/fixtures';
 
-const props = { posts };
+const props = { posts, getPosts: {}, setPosts: jest.fn() };
 
 describe( 'App', () => {
     const app = shallow( <App { ...props } /> );
 
     it( 'renders a title', () => {
-        expect( app.find( 'h2' ).text() ).toEqual( 'This is a posts list!' );
-    } );
-
-    it( 'renders the correct number of links', () => {
-        expect( app.find( 'PostLink' ) ).toHaveLength( posts.length );
+        expect( app.find( 'h2' ).text() ).toEqual( 'Testing changes! Yey! It works!' );
     } );
 
     it( 'title the links correctly', () => {

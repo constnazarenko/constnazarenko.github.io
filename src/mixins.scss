@@ -1,0 +1,18 @@
+@mixin flex-container ($direction: row, $justify-content: space-between, $align-items: center,
+                       $align-content: space-evenly, $flex-wrap: wrap, $display: flex) {
+  align-content: $align-content;
+  align-items: $align-items;
+  display: $display;
+  flex-direction: $direction;
+  flex-wrap: $flex-wrap;
+  justify-content: $justify-content;
+}
+
+@mixin flex-row ($justify-content: space-between, $align-items: center,
+                 $align-content: space-evenly, $flex-wrap: wrap, $display: flex) {
+  @include flex-container(row, $justify-content, $align-items, $align-content, $flex-wrap, $display);
+}
+@mixin flex-column ($justify-content: space-between, $align-items: center,
+                    $align-content: space-evenly, $flex-wrap: wrap, $display: flex) {
+  @include flex-container(column, $justify-content, $align-items, $align-content, $flex-wrap, $display);
+}
