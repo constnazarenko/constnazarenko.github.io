@@ -50,7 +50,7 @@ const duplicationCheck = new DuplicatePackageCheckerPlugin({
 });
 
 module.exports = {
-    entry: { bundle: './src/index.js' },
+    entry: { bundle: './src/index.ts' },
     output: {
         path: path.resolve(__dirname, dist),
         publicPath: "/",
@@ -89,7 +89,20 @@ module.exports = {
                     }
                 ]
             },
-            { test: /\.tsx?$/, use: { loader: "awesome-typescript-loader" } },
+            { test: /\.tsx?$/, exclude: /node_modules/, use: [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            ["@babel/preset-typescript", {isTSX: true, allExtensions: true}],
+                            "@babel/preset-react",
+                            ["@babel/preset-env", {
+                                "targets": {
+                                    "browsers": ["last 2 versions"]
+                                }
+                            }]
+                        ]
+                    }
+                }] },
             { test: /\.js$/, exclude: /node_modules/, use: [{
                 loader: 'babel-loader',
                 options: {

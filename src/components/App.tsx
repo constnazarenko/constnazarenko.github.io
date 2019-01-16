@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import { posts } from '../data/fixtures';
 import './App.scss';
 import Photo from './Photo';
 
@@ -8,7 +7,6 @@ class App extends Component {
 
     componentDidMount () {
         document.title = `CV - ${document.title}`;
-        this.props.setPosts( posts );
     }
 
     render () {

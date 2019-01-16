@@ -1,5 +1,5 @@
 import rootReducer from './index';
-import * as actions from '../actions';
+import * as actions from '../actions/index';
 import { posts } from '../data/fixtures';
 
 describe( 'rootReducer', () => {

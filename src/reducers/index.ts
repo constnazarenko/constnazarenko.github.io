@@ -1,4 +1,4 @@
-import { PICK_POST, SET_POSTS } from '../actions';
+import { PICK_POST, SET_POSTS } from '../actions/index';
 import { combineReducers } from 'redux';
 import { connectRouter } from 'connected-react-router';
 

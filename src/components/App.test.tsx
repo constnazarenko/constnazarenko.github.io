@@ -12,7 +12,7 @@ describe( 'App', () => {
     const app = shallow( <App { ...props } /> );
 
     it( 'renders a title', () => {
-        expect( app.find( 'h2' ).text() ).toEqual( 'Testing changes! Yey! It works!' );
+        expect( app.find( 'h1' ).text() ).toEqual( 'Testing changes! Yey! It works!' );
     } );
 
     it( 'title the links correctly', () => {
