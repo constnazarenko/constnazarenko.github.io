@@ -50,7 +50,7 @@ const duplicationCheck = new DuplicatePackageCheckerPlugin({
 });
 
 module.exports = {
-    entry: { bundle: './src/index.ts' },
+    entry: { bundle: './src/index.tsx' },
     output: {
         path: path.resolve(__dirname, dist),
         publicPath: "/",

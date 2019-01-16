@@ -1,4 +1,12 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(fab, far, faMapMarkerAlt, faPhone);
 
 import './App.scss';
 import Photo from './Photo';
@@ -21,9 +29,10 @@ class App extends Component {
                         </div>
                         <div className="contacts">
                             <dl>
-                                <dt>1</dt> <dd>Kyiv, Ukraine</dd>
-                                <dt>2</dt> <dd>const@nazarenko.es</dd>
-                                <dt>3</dt> <dd>+380 68 197-84-47</dd>
+                                <dt><FontAwesomeIcon icon={['fas', 'map-marker-alt']} /></dt> <dd>Kyiv, Ukraine</dd>
+                                <dt><FontAwesomeIcon icon={['far', 'envelope']} /></dt> <dd><a href="mailto:const@nazarenko.es">const@nazarenko.es</a></dd>
+                                <dt><FontAwesomeIcon icon={['fab', 'telegram-plane']} /></dt> <dd><a href="https://t.me/const_nazarenko">const_nazarenko</a></dd>
+                                <dt><FontAwesomeIcon icon={['fas', 'phone']} /></dt> <dd>+380 68 197-84-47</dd>
                             </dl>
                         </div>
                     </div>
