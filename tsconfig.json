@@ -2,7 +2,7 @@
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "rootDir": ".",
-    "outDir": "build",
+    "outDir": "dist",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -10,9 +10,13 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
-    "jsx": "preserve"
+    "noEmitOnError": false,
+    "declaration": false,
+    "jsx": "preserve",
+    "target": "es6",
+    "lib": ["DOM", "ES6", "DOM.Iterable", "ScriptHost"]
   },
   "include": [
     "src/*.ts",

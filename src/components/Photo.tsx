@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from "react";
 
-import './Photo.scss';
+import "./Photo.scss";
 
-class Photo extends Component {
-    render () {
+interface PhotoProps {
+    src: string;
+}
+class Photo extends PureComponent<PhotoProps> {
+    public render() {
         return (
             <div className="photo-wrapper">
-                <div className="photo" style={ { backgroundImage: `url('${this.props.src}')` } } />
+                <div className="photo" style={{ backgroundImage: `url('${this.props.src}')` }} />
             </div>
         );
     }

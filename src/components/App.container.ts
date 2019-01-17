@@ -1,13 +1,11 @@
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
+import ReduxStore from '../types/store';
 import App from './App';
-import { setPosts } from '../actions/index';
 
-const mapStateToProps = ( state ) => {
-    return { posts: state.posts };
+const mapStateToProps = (state: ReduxStore) => {
+  return {};
 };
 
-const mapDispatchToProps = {
-    setPosts,
-};
+const mapDispatchToProps = {};
 
-export default connect( mapStateToProps, mapDispatchToProps )( App );
+export default connect(mapStateToProps, mapDispatchToProps)(App);
