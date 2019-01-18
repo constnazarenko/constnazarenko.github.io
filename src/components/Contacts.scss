@@ -1,0 +1,26 @@
+@import "../variables";
+
+.contacts {
+  width: 100%;
+
+  dl {
+    margin-top: 25px;
+
+    dt {
+      float: left;
+      clear: left;
+      margin-right: 10px;
+      text-align: right;
+      width: 50px;
+      font-size: 105%;
+    }
+    dd {
+      float: left;
+      margin-bottom: 3px;
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { PureComponent } from "react";
+import "./Contacts.scss";
 
 interface ContactItem {
     title: string;

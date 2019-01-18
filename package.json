@@ -11,7 +11,7 @@
     "@fortawesome/free-solid-svg-icons": "5.6.3",
     "@fortawesome/react-fontawesome": "0.1.4",
     "connected-react-router": "6.2.1",
-    "history": "^4.7.2",
+    "history": "4.7.2",
     "react": "16.7.0",
     "react-dom": "16.7.0",
     "react-redux": "6.0.0",
@@ -53,6 +53,7 @@
     "node-sass": "4.11.0",
     "npm-check": "5.9.0",
     "npm-run-all": "4.1.5",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
     "redux-logger": "3.0.6",
     "sass-loader": "7.1.0",
     "source-map-loader": "0.2.4",
@@ -63,17 +64,20 @@
     "tslint": "5.12.1",
     "tslint-react": "3.6.0",
     "typescript": "3.2.2",
+    "uglifyjs-webpack-plugin": "2.1.1",
     "webpack": "4.28.4",
     "webpack-bundle-analyzer": "3.0.3",
     "webpack-cli": "3.2.1",
     "webpack-dashboard": "2.0.0",
-    "webpack-dev-server": "3.1.14"
+    "webpack-dev-server": "3.1.14",
+    "webpack-md5-hash": "0.0.6",
+    "webpack-merge": "4.2.1"
   },
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack --config webpack.prod.js",
     "eject": "react-scripts eject",
     "eslint": "eslint",
-    "start": "webpack-dashboard -- webpack-dev-server --open --mode development --hot --color",
+    "start": "webpack-dashboard -- webpack-dev-server --open --mode development --hot --color --config webpack.dev.js",
     "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -b master",
@@ -95,7 +99,7 @@
     "*.css": "stylelint"
   },
   "engines": {
-    "npm": "6.5.0",
+    "npm": "6.6.0",
     "node": "11.6.0"
   },
   "husky": {

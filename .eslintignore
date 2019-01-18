@@ -4,5 +4,6 @@ blueprints
 jest-setup-files.js
 jest-setup-scripts.js
 node_modules
-webpack.config.js
-webpack.production.config.js
+webpack.dev.js
+webpack.prod.js
+webpack.common.js
