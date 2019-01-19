@@ -1,5 +1,5 @@
+import React, { PureComponent } from "react";
 import "./Skills.scss";
-import { PureComponent } from "react";
 
 interface Skill {
     title: string;
@@ -11,11 +11,18 @@ interface SkillsProps {
 }
 
 class Skills extends PureComponent<SkillsProps> {
-    render() {
+    public render() {
         return (
             <div className="skills">
-
+                <h2>Skills</h2>
+                {
+                    this.props.skills.map((skill: Skill) => (
+                        <div>{skill.title}</div>
+                    ))
+                }
             </div>
         );
     }
 }
+
+export default Skills;
