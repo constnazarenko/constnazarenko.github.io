@@ -1,0 +1,40 @@
+@import "../mixins";
+@import "../variables";
+
+.skills {
+  width: 100%;
+
+  .skill {
+    width: 100%;
+
+    .skill-title {
+      height: 20px;
+      width: 100px;
+      margin: 0 0 3px 20px;
+      padding-right: 15px;
+    }
+
+    .skill-rating {
+      list-style: none;
+      width: 100%;
+      display: block;
+      padding: 3px 20px 10px 15px;
+      margin: 0;
+      height: 15px;
+      @include flex-row(center);
+
+      li {
+        display: block;
+        width: 8%;
+        margin-right: 3px;
+        height: 15px;
+        background-color: $text-white;
+        transform: skewX(-30deg);
+        opacity: .1;
+      }
+      li.filled {
+        opacity: .8;
+      }
+    }
+  }
+}

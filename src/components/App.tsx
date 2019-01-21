@@ -39,7 +39,7 @@ class App extends Component {
         ];
 
         const skills = [
-            {title: "I just love icons and list =)", rating: 8, type: "frontend"},
+            {title: "React", rating: 8, type: "frontend"},
         ];
 
         return (

@@ -1,24 +1,9 @@
+@import './variables';
+
 body {
   font-size: 14px;
   padding: 5px;
-}
-
-.clue {
-  border: 1px solid #d3d3d3;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px;
-  padding: 10px;
-}
-
-.text-hidden {
-  visibility: hidden;
-}
-
-.text-revealed {
-  animation-duration: 1s;
-  animation-name: fade-in;
-  visibility: visible;
+  background-color: $bg-white;
 }
 
 @keyframes fade-in {

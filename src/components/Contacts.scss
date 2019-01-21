@@ -1,6 +1,7 @@
 @import '../variables';
 
 .contacts {
+  min-width: 225px;
   width: 100%;
 
   dl {
@@ -10,9 +11,9 @@
       clear: left;
       float: left;
       font-size: 105%;
-      margin-right: 10px;
+      margin: 0 10px 0 20px;
       text-align: right;
-      width: 50px;
+      width: 15px;
     }
 
     dd {
@@ -20,7 +21,7 @@
       margin-bottom: 3px;
 
       a {
-        color: $white;
+        color: $text-white;
         text-decoration: underline;
       }
     }
