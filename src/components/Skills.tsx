@@ -6,6 +6,7 @@ interface Skill {
     title: string;
     rating: number;
     type: "frontend" | "backend" | "infra";
+    description: string;
 }
 interface SkillsProps {
     skills: Skill[];
@@ -29,6 +30,7 @@ class Skills extends PureComponent<SkillsProps> {
                                     )
                                 }
                             </ul>
+                            <div className="skill-description" dangerouslySetInnerHTML={{ __html: skill.description }} />
                         </div>
                     ))
                 }
@@ -38,3 +40,4 @@ class Skills extends PureComponent<SkillsProps> {
 }
 
 export default Skills;
+export { Skill };
