@@ -8,18 +8,19 @@ import Contacts from "./Contacts";
 import NameTitle from "./NameTitle";
 import Photo from "./Photo";
 import Positions from "./Positions";
-import Skills, { Skill } from "./Skills";
+import Skills  from "./Skills.container";
+import { loadSkills } from "../actions";
 
 library.add(fab, far, faMapMarkerAlt, faPhone);
 
 interface AppProps {
-    skills: Skill[];
 }
 
 class App extends Component<AppProps> {
 
     public componentDidMount() {
         document.title = `CV - ${document.title}`;
+        // dispatch(loadSkills);
     }
 
     public render() {
@@ -60,7 +61,7 @@ class App extends Component<AppProps> {
                         <Photo src="/images/face.jpg"/>
                         <NameTitle name="Constantine Nazárenko" title="Senior Software Engineer"/>
                         <Contacts contacts={contacts}/>
-                        <Skills skills={this.props.skills}/>
+                        <Skills />
                     </div>
                     <div>
                         <header>

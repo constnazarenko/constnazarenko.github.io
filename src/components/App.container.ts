@@ -3,7 +3,7 @@ import ReduxStore from "../types/store";
 import App from "./App";
 
 const mapStateToProps = (state: ReduxStore) => {
-  return {skills: state.skills};
+  return {};
 };
 
 const mapDispatchToProps = {};

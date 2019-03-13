@@ -10,9 +10,14 @@ interface Skill {
 }
 interface SkillsProps {
     skills: Skill[];
+    loadSkills: () => void;
 }
 
 class Skills extends PureComponent<SkillsProps> {
+    componentDidMount() {
+        console.log(this.props, this.props.loadSkills());
+    }
+
     public render() {
         return (
             <div className="skills">
