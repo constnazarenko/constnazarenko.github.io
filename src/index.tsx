@@ -15,16 +15,16 @@ const middleware = routerMiddleware(history);
 const reduxLogger = createLogger({diff: true});
 const store = createStore(
     rootReducer(history),
-    compose(applyMiddleware(reduxLogger, middleware))
+    compose(applyMiddleware(reduxLogger, middleware)),
 );
 
 ReactDom.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
             <Switch>
-                <Route component={App} exact path="/"/>
+                <Route component={App} exact={true} path="/"/>
             </Switch>
         </ConnectedRouter>
     </Provider>,
-    document.getElementById("root")
+    document.getElementById("root"),
 );

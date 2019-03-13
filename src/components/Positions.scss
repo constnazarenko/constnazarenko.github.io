@@ -7,28 +7,31 @@
     margin-bottom: 15px;
 
     .period {
-      flex: 0.5;
       color: $text-gray;
+      flex: 0.8;
       font-size: 1.5em;
-      line-height: .9em;
       font-style: normal;
       font-weight: lighter;
-      padding: 0 15px 0 0;
+      line-height: 0.9em;
       margin-top: 5px;
+      padding: 0 15px 0 0;
     }
+
     .description {
-      flex: 3.5;
+      flex: 3.2;
 
       h3 {
+        color: $text-darkgray;
         font-size: 1.3em;
         margin-bottom: 0;
-        color: $text-darkgray;
       }
+
       h4 {
-        font-weight: normal;
-        font-size: 1.1em;
         color: $text-darkblue;
+        font-size: 1.1em;
+        font-weight: normal;
       }
+
       article {
 
       }

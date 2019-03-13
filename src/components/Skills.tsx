@@ -1,5 +1,5 @@
-import React, { PureComponent } from "react";
 import classnames from "classnames";
+import React, { PureComponent } from "react";
 import "./Skills.scss";
 
 interface Skill {
@@ -20,17 +20,20 @@ class Skills extends PureComponent<SkillsProps> {
                     <h2>Skills</h2>
                 </header>
                 {
-                    this.props.skills.map((skill: Skill) => (
+                    this.props.skills && this.props.skills.map((skill: Skill) => (
                         <div className="skill" key={skill.title}>
                             <div className="skill-title">{skill.title}</div>
                             <ul className="skill-rating">
                                 {
                                     [...Array(10)].map((x, i) =>
-                                        <li key={i} className={classnames({"filled": i < skill.rating})}/>
+                                        <li key={i} className={classnames({filled: i < skill.rating})}/>
                                     )
                                 }
                             </ul>
-                            <div className="skill-description" dangerouslySetInnerHTML={{ __html: skill.description }} />
+                            <div
+                                className="skill-description"
+                                dangerouslySetInnerHTML={{ __html: skill.description }}
+                            />
                         </div>
                     ))
                 }

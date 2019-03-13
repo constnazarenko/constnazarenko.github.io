@@ -39,7 +39,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new CopyWebpackPlugin([{from:'src/images', to:'images'}]),
+        new CopyWebpackPlugin([{from:'src/images', to:'images'}, {from:'src/api', to:'api'}]),
         new HtmlWebPackPlugin({template: "./src/index.html", filename: "./index.html"}),
         new FriendlyErrorsWebpackPlugin()
     ],
