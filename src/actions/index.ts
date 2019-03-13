@@ -1,8 +1,5 @@
-import { SkillsAction } from "../types/actions";
+import { Action } from "redux";
 
-export const loadSkills = (): SkillsAction => ({
-    type: 'SKILLS_LOAD',
-    payload: {
-        skills: [{"title": "Frontend", "rating": 8, "type": "frontend", "description": "Javascript, <strong>React</strong>, Redux, TypeScript, HTML, CSS, SASS ... and many other"}]
-    }
+export const loadSkills = (): Action => ({
+    type: "SKILLS_FETCH_REQUESTED",
 });

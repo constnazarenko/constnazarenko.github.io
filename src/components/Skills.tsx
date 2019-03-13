@@ -14,8 +14,8 @@ interface SkillsProps {
 }
 
 class Skills extends PureComponent<SkillsProps> {
-    componentDidMount() {
-        console.log(this.props, this.props.loadSkills());
+    public componentDidMount() {
+        this.props.loadSkills();
     }
 
     public render() {
