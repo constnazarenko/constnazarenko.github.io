@@ -8,9 +8,9 @@ import { Route, Switch } from "react-router-dom";
 import { applyMiddleware, compose, createStore } from "redux";
 import { createLogger } from "redux-logger";
 import createSagaMiddleware from "redux-saga";
-import App from "./components/App.container";
+import App from "./app/App";
 import "./index.scss";
-import rootReducer from "./reducers/index";
+import rootReducer from "./reducers";
 import sagas from "./sagas";
 
 const history = createBrowserHistory();

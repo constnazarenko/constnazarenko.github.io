@@ -2,7 +2,7 @@ import classnames from "classnames";
 import React, { PureComponent } from "react";
 import "./Skills.scss";
 
-interface Skill {
+export interface Skill {
     title: string;
     rating: number;
     type: "frontend" | "backend" | "infra";
@@ -10,12 +10,12 @@ interface Skill {
 }
 interface SkillsProps {
     skills: Skill[];
-    loadSkills: () => void;
+    load: () => void;
 }
 
 class Skills extends PureComponent<SkillsProps> {
     public componentDidMount() {
-        this.props.loadSkills();
+        this.props.load();
     }
 
     public render() {
@@ -48,4 +48,3 @@ class Skills extends PureComponent<SkillsProps> {
 }
 
 export default Skills;
-export { Skill };

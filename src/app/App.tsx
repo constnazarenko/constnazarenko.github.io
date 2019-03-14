@@ -4,12 +4,11 @@ import {far} from "@fortawesome/free-regular-svg-icons";
 import {faMapMarkerAlt, faPhone} from "@fortawesome/free-solid-svg-icons";
 import React, {Component} from "react";
 import "./App.scss";
-import Contacts from "./Contacts";
+import Contacts from "./Contacts.container";
 import NameTitle from "./NameTitle";
 import Photo from "./Photo";
 import Positions from "./Positions";
 import Skills  from "./Skills.container";
-import { loadSkills } from "../actions";
 
 library.add(fab, far, faMapMarkerAlt, faPhone);
 
@@ -20,30 +19,9 @@ class App extends Component<AppProps> {
 
     public componentDidMount() {
         document.title = `CV - ${document.title}`;
-        // dispatch(loadSkills);
     }
 
     public render() {
-        const contacts = [
-            {title: "Kyiv, Ukraine", icon: ["fas", "map-marker-alt"] as IconProp},
-            {title: "const@nazarenko.es", icon: ["far", "envelope"] as IconProp, href: "mailto:const@nazarenko.es"},
-            {
-                href: "https://t.me/const_nazarenko",
-                icon: ["fab", "telegram-plane"] as IconProp,
-                title: "const_nazarenko",
-            },
-            {title: "+380 68 197-84-47", icon: ["fas", "phone"] as IconProp},
-            {title: "github", icon: ["fab", "github"] as IconProp, href: "https://github.com/constnazarenko/"},
-            {
-                href: "https://github.com/constnazarenko/constnazarenko.github.io/tree/develop",
-                icon: ["fab", "git"] as IconProp,
-                title: "code example (this very cv)",
-            },
-            {title: "instagram", icon: ["fab", "instagram"] as IconProp, href: "https://instagram.com/const.nazarenko"},
-            {title: "facebook", icon: ["fab", "facebook"] as IconProp, href: "https://facebook.com/const.nazarenko"},
-            {title: "I just love icons and list =)", icon: ["far", "heart"] as IconProp},
-        ];
-
         const positions = [
             {company: 'Qvantel', description: 'My responsibilities are refactoring of legacy code, translating old parts of code to TypeScript and implementing new features to improve the product.\n' +
                     'Quality is ensured with unit tests applying Jest and Enzyme.\n' +
@@ -60,7 +38,7 @@ class App extends Component<AppProps> {
                     <div>
                         <Photo src="/images/face.jpg"/>
                         <NameTitle name="Constantine Nazárenko" title="Senior Software Engineer"/>
-                        <Contacts contacts={contacts}/>
+                        <Contacts />
                         <Skills />
                     </div>
                     <div>

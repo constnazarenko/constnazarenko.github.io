@@ -1,0 +1,19 @@
+[
+    {"title": "Kyiv, Ukraine", "icon": ["fas", "map-marker-alt"]},
+    {"title": "const@nazarenko.es", "icon": ["far", "envelope"], "href": "mailto:const@nazarenko.es"},
+    {
+        "href": "https://t.me/const_nazarenko",
+        "icon": ["fab", "telegram-plane"],
+        "title": "const_nazarenko"
+    },
+    {"title": "+380 68 197-84-47", "icon": ["fas", "phone"]},
+    {"title": "github", "icon": ["fab", "github"], "href": "https://github.com/constnazarenko/"},
+    {
+        "href": "https://github.com/constnazarenko/constnazarenko.github.io/tree/develop",
+        "icon": ["fab", "git"],
+        "title": "code example (this very cv)"
+    },
+    {"title": "instagram", "icon": ["fab", "instagram"], "href": "https://instagram.com/const.nazarenko"},
+    {"title": "facebook", "icon": ["fab", "facebook"], "href": "https://facebook.com/const.nazarenko"},
+    {"title": "I just love icons and list =)", "icon": ["far", "heart"]}
+]
