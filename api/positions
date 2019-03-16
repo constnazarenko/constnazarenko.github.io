@@ -1,0 +1,11 @@
+[
+{"company": "Qvantel", "description": "My responsibilities are refactoring of legacy code, translating old parts of code to TypeScript and implementing new features to improve the product. Quality is ensured with unit tests applying Jest and Enzyme. The product is a complex solution for global telecommunication providers and their customers.", "end": null, "start": "2018.03", "title": "Senior frontend developer"},
+{"company": "How Far Games (GSEG)", "description": "Among my responsibilities were implementation of a new functionality of the web-based gaming application written on React and Python.", "end": "2017.08", "start": "2017.02", "title": "Senior full-stack developer"},
+{"company": "AdvancedHosting", "description": "I built couple of major projects for this company as architect and tech leader. Most of them is still in use as main instruments of managing business processes.", "end": "2016.12", "start": "2010.11", "title": "Software Architect, Senior full-stack developer"},
+{"company": "Striped urchin", "description": "I was responsible for technical side of all company's products. Also development processes management was on me.", "end": "2010.11", "start": "2008.08", "title": "Technical Leader, Co-founder"},
+{"company": "Overdesign", "description": "As the software architect and developer I built social network shaped product for the company's needs.", "end": "2008.08", "start": "2007.08", "title": "Software Architect, Senior backend developer"},
+{"company": "SomeECards", "description": "As the software architect and developer I built the online postcards service.", "end": "2007.08", "start": "2007.02", "title": "Software Architect, Senior backend developer"},
+{"company": "Reaktivate", "description": "", "end": "2007.02", "start": "2005.12", "title": "Senior frontend developer"},
+{"company": "WorldWebStudio", "description": "", "end": "2005.12", "start": "2004.07", "title": "Frontend developer"},
+{"company": "", "description": "", "end": "2004.07", "start": "2000.01", "title": "Freelance web developer"}
+]
