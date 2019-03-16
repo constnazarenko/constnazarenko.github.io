@@ -1,7 +1,7 @@
 import React from "react";
-import "./Positions.scss";
+import "./styles.scss";
 
-interface Position {
+export interface Position {
     company: string;
     description: string;
     end: string | null;
@@ -10,10 +10,15 @@ interface Position {
 }
 interface PositionsProps {
     heading: string;
+    load: () => void;
     positions: Position[];
 }
 
 class Positions extends React.Component<PositionsProps> {
+    public componentDidMount() {
+        this.props.load();
+    }
+
     public render() {
         return (
             <div className="positions">

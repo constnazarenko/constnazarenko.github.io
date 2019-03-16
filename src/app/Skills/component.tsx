@@ -1,6 +1,6 @@
 import classnames from "classnames";
 import React, { PureComponent } from "react";
-import "./Skills.scss";
+import "./styles.scss";
 
 export interface Skill {
     title: string;

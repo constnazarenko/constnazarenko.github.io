@@ -1,10 +1,10 @@
-@import "../mixins";
-@import "../variables";
+@import "../../mixins";
+@import "../../variables";
 
 .positions {
   .position {
     @include flex-row(stretch, flex-start);
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 
     .period {
       color: $text-gray;

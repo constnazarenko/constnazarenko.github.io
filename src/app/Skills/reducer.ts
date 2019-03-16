@@ -1,6 +1,6 @@
-import { Skill } from "./Skills";
-import { FETCH_FAILURE, FETCH_REQUEST, FETCH_SUCCESS } from "./Skills.const";
-import { SkillsAction } from "./types/actions";
+import { Skill } from "./component";
+import { FETCH_FAILURE, FETCH_REQUEST, FETCH_SUCCESS } from "./const";
+import { SkillsAction } from "../types/actions";
 
 const reducer = (state: Skill[] = [], action: SkillsAction) => {
     switch (action.type) {

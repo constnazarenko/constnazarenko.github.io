@@ -1,0 +1,40 @@
+@import "../../mixins";
+@import "../../variables";
+
+.educations {
+  .education {
+    @include flex-row(stretch, flex-start);
+    margin-bottom: 25px;
+
+    .period {
+      color: $text-gray;
+      flex: 0.8;
+      font-size: 1.5em;
+      font-style: normal;
+      font-weight: lighter;
+      line-height: 0.9em;
+      margin-top: 5px;
+      padding: 0 15px 0 0;
+    }
+
+    .description {
+      flex: 3.2;
+
+      h3 {
+        color: $text-darkgray;
+        font-size: 1.3em;
+        margin-bottom: 0;
+      }
+
+      h4 {
+        color: $text-darkblue;
+        font-size: 1.1em;
+        font-weight: normal;
+      }
+
+      article {
+
+      }
+    }
+  }
+}

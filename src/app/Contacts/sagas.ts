@@ -1,5 +1,5 @@
 import { call, put, takeLatest } from "redux-saga/effects";
-import { FETCH_FAILURE, FETCH_REQUEST, FETCH_SUCCESS } from "./Contacts.const";
+import { FETCH_FAILURE, FETCH_REQUEST, FETCH_SUCCESS } from "./const";
 
 async function fetchJson(url: string) {
     let resp;

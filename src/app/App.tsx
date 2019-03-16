@@ -4,11 +4,12 @@ import {far} from "@fortawesome/free-regular-svg-icons";
 import {faMapMarkerAlt, faPhone} from "@fortawesome/free-solid-svg-icons";
 import React, {Component} from "react";
 import "./App.scss";
-import Contacts from "./Contacts.container";
+import Contacts from "./Contacts";
 import NameTitle from "./NameTitle";
 import Photo from "./Photo";
 import Positions from "./Positions";
-import Skills  from "./Skills.container";
+import Education from "./Education";
+import Skills  from "./Skills";
 
 library.add(fab, far, faMapMarkerAlt, faPhone);
 
@@ -50,9 +51,9 @@ class App extends Component<AppProps> {
                         <p>I love creative and problem-solving tasks.</p>
                         <p>Constant growth and learning is always the best way to keep my mind in shape and in my free time this is where I spend my time off.</p>
 
-                        <Positions heading="Professional Experience" positions={positions}/>
+                        <Positions heading="Professional Experience" />
 
-                        <Positions heading="Education" positions={education}/>
+                        <Education heading="Education" />
 
                     </div>
                 </div>

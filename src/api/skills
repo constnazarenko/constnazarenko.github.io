@@ -1,1 +1,7 @@
-[{"title": "Frontend", "rating": 8, "type": "frontend", "description": "Javascript, <strong>React</strong>, Redux, TypeScript, HTML, CSS, SASS ... and many other"}]
+[
+{"title": "Frontend", "rating": 8, "type": "frontend", "description": "Javascript, <strong>React</strong>, Redux, TypeScript, HTML, CSS, SASS ... and many other"},
+{"title": "Backend", "rating": 7, "type": "frontend", "description": "<strong>Python</strong>, PHP, MySQL, <strong>PostgreSQL</strong>, Go, REST"},
+{"title": "Infrastructure", "rating": 8, "type": "frontend", "description": "Git, Webpack, *nix, gulp, docker, nginx, apache"},
+{"title": "Testing", "rating": 7, "type": "frontend", "description": "TDD, Jest, Enzyme, Unittest"},
+{"title": "Languages", "rating": 8, "type": "frontend", "description": "English, Russian, Ukrainian, Portuguese"}
+]
