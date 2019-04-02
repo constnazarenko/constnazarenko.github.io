@@ -1,10 +1,10 @@
 import { connect } from "react-redux";
 import ReduxStore from "../types/store";
 import { load } from "./actions";
-import Skills from "./component";
+import App from "./component";
 
 const mapStateToProps = (state: ReduxStore) => {
-  return {skills: state.skills};
+  return {hobbies: state.hobbies, profile: state.profile};
 };
 
-export default connect(mapStateToProps, { load })(Skills);
+export default connect(mapStateToProps, { load })(App);

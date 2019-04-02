@@ -1,28 +1,9 @@
-import { call, put, takeEvery } from "redux-saga/effects";
+import { takeEvery } from "redux-saga/effects";
+import { loader } from "../tools";
 import { FETCH_FAILURE, FETCH_REQUEST, FETCH_SUCCESS } from "./const";
 
-async function fetchJson(url: string) {
-    let resp;
-    try {
-        const data = await fetch(url);
-        resp = { data: await data.json() };
-    } catch (e) {
-        resp = { err: e.message };
-    }
-    return resp;
-}
-
 function* load() {
-    try {
-        const { data, err } = yield call(fetchJson, `/api/positions`);
-        if (!!data) {
-            yield put({type: FETCH_SUCCESS, payload: data});
-        } else {
-            yield put({ type: FETCH_FAILURE, ...err.message });
-        }
-    } catch (e) {
-        yield put({ type: FETCH_FAILURE, message: e.message });
-    }
+    yield loader("/api/positions", FETCH_SUCCESS, FETCH_FAILURE);
 }
 
 export default function* sagas(): Iterable<any> {

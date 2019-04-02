@@ -1,7 +1,12 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import {IconProp, library} from "@fortawesome/fontawesome-svg-core";
+import {fab} from "@fortawesome/free-brands-svg-icons";
+import {far} from "@fortawesome/free-regular-svg-icons";
+import {faMapMarkerAlt, faPhone} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { PureComponent, Fragment } from "react";
+import React, { Fragment, PureComponent } from "react";
+
 import "./styles.scss";
+library.add(fab, far, faMapMarkerAlt, faPhone);
 
 export interface ContactItem {
     title: string;

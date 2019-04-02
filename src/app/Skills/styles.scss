@@ -1,19 +1,19 @@
-@import "../../mixins";
-@import "../../variables";
+@import '../../mixins';
+@import '../../variables';
 
 .skills {
   width: 100%;
 
   .skill {
-    width: 100%;
     margin-bottom: 25px;
+    width: 100%;
 
     .skill-title {
+      font-size: 1.2em;
       height: 20px;
-      width: 100px;
       margin: 0 0 .5em 1em;
       padding-right: 1em;
-      font-size: 1.2em;
+      width: 100px;
     }
 
     .skill-description {
@@ -22,25 +22,25 @@
     }
 
     .skill-rating {
-      list-style: none;
-      width: 100%;
-      display: block;
-      padding: 3px 20px 10px 1em;
-      margin: 0;
-      height: 15px;
       @include flex-row(center);
+      height: 15px;
+      list-style: none;
+      margin: 0;
+      padding: 3px 20px 10px 1em;
+      width: 100%;
 
       li {
-        display: block;
-        width: 8%;
-        margin-right: 3px;
-        height: 15px;
         background-color: $text-white;
+        display: block;
+        height: 15px;
+        margin-right: 3px;
+        opacity: 0.1;
         transform: skewX(-30deg);
-        opacity: .1;
+        width: 8%;
       }
+
       li.filled {
-        opacity: .8;
+        opacity: 0.8;
       }
     }
   }
