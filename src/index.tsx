@@ -15,7 +15,7 @@ import sagas from "./sagas";
 
 const history = createBrowserHistory();
 const middleware = routerMiddleware(history);
-const reduxLogger = createLogger({diff: true});
+const reduxLogger = createLogger({diff: true, collapsed: true, predicate: (getState, action) => !!sessionStorage.getItem("enable_redux_logger")});
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(

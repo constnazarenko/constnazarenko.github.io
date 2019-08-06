@@ -1,24 +1,24 @@
 @import '../../variables';
 
 .contacts {
-  min-width: 225px;
+  min-width: 30ch;
   width: 100%;
 
   dl {
-    margin-top: 25px;
+    margin-top: 1rem;
 
     dt {
       clear: left;
       float: left;
-      font-size: 105%;
-      margin: 0 10px 0 20px;
+      font-size: 1.1rem;
+      margin: 0 0.5rem 0 1.25rem;
       text-align: right;
-      width: 15px;
+      width: 1rem;
     }
 
     dd {
       float: left;
-      margin-bottom: 3px;
+      margin-bottom: 0;
 
       a {
         color: $text-white;
