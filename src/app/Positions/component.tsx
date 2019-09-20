@@ -7,6 +7,7 @@ export interface Position {
     end: string | null;
     start: string;
     title: string;
+    technologies: string[];
 }
 interface PositionsProps {
     heading: string;
@@ -35,6 +36,11 @@ class Positions extends React.Component<PositionsProps> {
                                 <h3>{position.title}</h3>
                                 <h4>{position.company}</h4>
                                 <article>{position.description}</article>
+                                <ul>
+                                    {
+                                        position.technologies.map((tech, ind) => (<li key={ind}>{tech}</li>))
+                                    }
+                                </ul>
                             </div>
                         </div>
                     ))
