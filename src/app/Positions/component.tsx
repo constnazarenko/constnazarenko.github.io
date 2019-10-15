@@ -36,7 +36,7 @@ class Positions extends React.Component<PositionsProps> {
                                 <h3>{position.title}</h3>
                                 <h4>{position.company}</h4>
                                 <article>{position.description}</article>
-                                <ul>
+                                <ul className="technologies">
                                     {
                                         position.technologies.map((tech, ind) => (<li key={ind}>{tech}</li>))
                                     }

@@ -12,6 +12,7 @@ export interface ContactItem {
     title: string;
     icon: IconProp;
     href?: string;
+    nonprintable?: boolean;
 }
 interface ContactsProps {
     contacts: ContactItem[];

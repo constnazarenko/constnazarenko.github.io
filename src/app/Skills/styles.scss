@@ -5,9 +5,11 @@
   width: 100%;
 
   .skill {
-    margin-bottom: 25px;
     width: 100%;
 
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
     .skill-title {
       font-size: 1.2em;
       height: 20px;
