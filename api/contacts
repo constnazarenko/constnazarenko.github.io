@@ -7,6 +7,7 @@
         "title": "const_nazarenko"
     },
     {"title": "+380 68 197-84-47", "icon": ["fas", "phone"]},
+    {"title": "+34 655 03 7887", "icon": ["fas", "phone"]},
     {"title": "github", "icon": ["fab", "github"], "href": "https://github.com/constnazarenko/", "nonprintable": true},
     {
         "href": "https://github.com/constnazarenko/constnazarenko.github.io/tree/develop",
