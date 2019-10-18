@@ -28,7 +28,7 @@ class Contacts extends PureComponent<ContactsProps> {
         return (
             <div className="contacts">
                 <dl>
-                    {
+                    {// .filter((el) => !el.nonprintable)
                         this.props.contacts.map((contact: ContactItem) => (
                             <Fragment key={contact.title}>
                                 <dt><FontAwesomeIcon icon={contact.icon}/></dt>
