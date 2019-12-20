@@ -17,6 +17,7 @@ export interface ContactItem {
 interface ContactsProps {
     contacts: ContactItem[];
     load: () => void;
+    printable: boolean;
 }
 
 class Contacts extends PureComponent<ContactsProps> {
@@ -25,11 +26,13 @@ class Contacts extends PureComponent<ContactsProps> {
     }
 
     public render() {
+        const { printable } = this.props;
         return (
             <div className="contacts">
                 <dl>
-                    {// .filter((el) => !el.nonprintable)
-                        this.props.contacts.map((contact: ContactItem) => (
+                    {
+                        this.props.contacts.filter(
+                            (el) => printable !== el.nonprintable).map((contact: ContactItem) => (
                             <Fragment key={contact.title}>
                                 <dt><FontAwesomeIcon icon={contact.icon}/></dt>
                                 <dd>

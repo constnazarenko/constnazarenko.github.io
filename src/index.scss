@@ -1,9 +1,9 @@
 @import './variables';
 
 body {
-  font-size: 16px;
-  padding: 1px;
   background-color: $bg-white;
+  font-size: 16px;
+  padding: 0;
 }
 
 @keyframes fade-in {

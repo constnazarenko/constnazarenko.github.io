@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import { load } from "./actions";
 import ReduxStore from "../types/store";
+import { load } from "./actions";
 import Education from "./component";
 
 const mapStateToProps = (state: ReduxStore) => {

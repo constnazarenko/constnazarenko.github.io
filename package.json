@@ -82,7 +82,6 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "eject": "react-scripts eject",
-    "eslint": "eslint",
     "start": "webpack-dashboard -- webpack-dev-server --open --mode development --hot --color --config webpack.dev.js",
     "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
@@ -98,8 +97,8 @@
     "check-types": "tsc"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix",
+    "*.{ts,tsx}": [
+      "tslint --fix",
       "git add"
     ],
     "*.css": "stylelint"

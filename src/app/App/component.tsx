@@ -17,11 +17,16 @@ export interface Profile {
 export interface Hobby {
     title: string;
 }
+export interface AppGlobalState {
+    printable: boolean;
+}
 
 interface AppProps {
     profile: Profile;
     hobbies: Hobby[];
     load: () => void;
+    printable: boolean;
+    switchPrintable: (printable: boolean) => void;
 }
 
 class App extends PureComponent<AppProps> {
@@ -43,6 +48,9 @@ class App extends PureComponent<AppProps> {
                         <List heading="Hobbies" items={this.props.hobbies} />
                     </div>
                     <div>
+                        <a className="switch-printable" onClick={this.togglePrintable}>
+                            {this.props.printable ? "Back to browser-friendly view" : " Printing-friendly view"}
+                        </a>
                         <header>
                             <h2>Summary</h2>
                         </header>
@@ -57,6 +65,11 @@ class App extends PureComponent<AppProps> {
             </div>
         );
     }
+
+    private togglePrintable = () => {
+        this.props.switchPrintable(!this.props.printable);
+    }
+
 }
 
 export default App;

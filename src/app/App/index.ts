@@ -1,10 +1,10 @@
 import { connect } from "react-redux";
 import ReduxStore from "../types/store";
-import { load } from "./actions";
+import { load, switchPrintable } from "./actions";
 import App from "./component";
 
 const mapStateToProps = (state: ReduxStore) => {
-  return {hobbies: state.hobbies, profile: state.profile};
+  return {hobbies: state.hobbies, profile: state.profile, printable: state.appGlobalState.printable};
 };
 
-export default connect(mapStateToProps, { load })(App);
+export default connect(mapStateToProps, { load, switchPrintable })(App);

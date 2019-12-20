@@ -1,6 +1,6 @@
+import { ContactsAction } from "../types/actions";
 import { ContactItem } from "./component";
 import { FETCH_FAILURE, FETCH_REQUEST, FETCH_SUCCESS } from "./const";
-import { ContactsAction } from "../types/actions";
 
 const reducer = (state: ContactItem[] = [], action: ContactsAction) => {
     switch (action.type) {

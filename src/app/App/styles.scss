@@ -71,6 +71,15 @@
       flex: 3.5;
       padding: 5px 5px 5px 15px;
 
+      .switch-printable {
+        border-bottom: 1px dashed;
+        clear: right;
+        color: #425370;
+        cursor: pointer;
+        float: right;
+        font-size: 0.75rem;
+      }
+
       hr {
         background-color: $delimiter-gray;
       }

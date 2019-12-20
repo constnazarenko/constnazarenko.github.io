@@ -1,18 +1,19 @@
 import { connectRouter } from "connected-react-router";
 import { History } from "history";
 import { combineReducers } from "redux";
-import { hobbies, profile } from "./app/App/reducer";
-import Contacts from "./app/Contacts/reducer";
-import Education from "./app/Education/reducer";
-import Positions from "./app/Positions/reducer";
+import { appGlobalState, hobbies, profile } from "./app/App/reducer";
+import contacts from "./app/Contacts/reducer";
+import educations from "./app/Education/reducer";
+import positions from "./app/Positions/reducer";
 import Skills from "./app/Skills/reducer";
 
 export default (history: History<any>) =>
     combineReducers({
-        contacts: Contacts,
-        educations: Education,
+        appGlobalState,
+        contacts,
+        educations,
         hobbies,
-        positions: Positions,
+        positions,
         profile,
         router: connectRouter(history),
         skills: Skills,

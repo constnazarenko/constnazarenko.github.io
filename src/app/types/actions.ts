@@ -1,4 +1,4 @@
-import { Hobby, Profile } from "../App/component";
+import { AppGlobalState, Hobby, Profile } from "../App/component";
 import { ContactItem } from "../Contacts/component";
 import { EducationItem } from "../Education/component";
 import { Position } from "../Positions/component";
@@ -11,6 +11,11 @@ export interface ProfileAction {
 export interface HobbiesAction {
     type: string;
     payload: Hobby[];
+}
+
+export interface SettingsAction {
+    type: string;
+    payload: AppGlobalState;
 }
 export interface SkillsAction {
     type: string;
