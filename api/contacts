@@ -1,5 +1,4 @@
 [
-    {"title": "Kyiv, Ukraine", "icon": ["fas", "map-marker-alt"]},
     {"title": "const@nazarenko.es", "icon": ["far", "envelope"], "href": "mailto:const@nazarenko.es"},
     {
         "href": "https://t.me/const_nazarenko",
