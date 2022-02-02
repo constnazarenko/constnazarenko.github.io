@@ -5,7 +5,7 @@ export async function fetchJson(uri: string) {
     try {
         const data = await fetch(uri);
         resp = { data: await data.json() };
-    } catch (e) {
+    } catch (e: any) {
         resp = { err: e.message };
     }
     return resp;
@@ -19,7 +19,7 @@ export function* loader(uri: string, success: string, failure: string) {
         } else {
             yield put({ type: failure, ...err });
         }
-    } catch (e) {
+    } catch (e: any) {
         yield put({ type: failure, message: e.message });
     }
 }

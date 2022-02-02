@@ -1,23 +1,10 @@
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
-const webpackDashboard = require('webpack-dashboard/plugin');
+const path = require("path");
 
 module.exports = merge(common, {
     mode: 'development',
     plugins: [
-        new webpackDashboard(),
-        // new BundleAnalyzerPlugin(),
-        new DuplicatePackageCheckerPlugin({
-            verbose: true,
-            emitError: true,
-            showHelp: false,
-            strict: false,
-            exclude(instance) {
-                return instance.name === "fbjs";
-            }
-        })
     ],
     module: {
         rules: [
@@ -29,5 +16,31 @@ module.exports = merge(common, {
                 ]
             },
         ]
-    }
+    },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'assets'),
+            publicPath: '/assets',
+        },
+        client: {
+            overlay: {
+                errors: true,
+                warnings: false,
+            },
+            progress: true,
+        },
+        devMiddleware: {
+            index: true,
+            publicPath: '/',
+            serverSideRender: true,
+            writeToDisk: true,
+        },
+        hot: true,
+        liveReload: false,
+        open: {
+            app: { name: 'Google Chrome', arguments: ['--incognito', '--new-window'] },
+        },
+        historyApiFallback: true,
+        port: 3000
+    },
 });

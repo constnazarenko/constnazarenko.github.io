@@ -41,11 +41,9 @@ class App extends PureComponent<AppProps> {
             <div className="wrapper">
                 <div className="container">
                     <div>
-                        <Photo src="/images/face.jpg"/>
+                        <Photo src="/images/face_sq.jpg"/>
                         <NameTitle name={name} title={title}/>
                         <Contacts />
-                        <Skills />
-                        <List heading="Hobbies" items={this.props.hobbies} />
                     </div>
                     <div>
                         <a className="switch-printable" onClick={this.togglePrintable}>

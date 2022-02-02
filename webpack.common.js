@@ -1,5 +1,4 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -41,10 +40,5 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin({patterns: [{from:'src/images', to:'images'}, {from:'src/api', to:'api'}]}),
         new HtmlWebPackPlugin({template: "./src/index.html", filename: "./index.html"}),
-        new FriendlyErrorsWebpackPlugin()
-    ],
-    devServer: {
-        quiet: true,
-        hot: true
-    }
+    ]
 };

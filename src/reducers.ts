@@ -1,4 +1,3 @@
-import { connectRouter } from "connected-react-router";
 import { History } from "history";
 import { combineReducers } from "redux";
 import { appGlobalState, hobbies, profile } from "./app/App/reducer";
@@ -15,6 +14,5 @@ export default (history: History<any>) =>
         hobbies,
         positions,
         profile,
-        router: connectRouter(history),
         skills: Skills,
     });

@@ -1,5 +1,4 @@
 import "@babel/polyfill";
-import { ConnectedRouter, routerMiddleware } from "connected-react-router";
 import { createBrowserHistory } from "history";
 import * as React from "react";
 import ReactDom from "react-dom";
@@ -14,7 +13,6 @@ import rootReducer from "./reducers";
 import sagas from "./sagas";
 
 const history = createBrowserHistory();
-const middleware = routerMiddleware(history);
 const reduxLogger = createLogger({
     collapsed: true,
     diff: true,
@@ -24,18 +22,14 @@ const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
     rootReducer(history),
-    compose(applyMiddleware(reduxLogger, middleware, sagaMiddleware)),
+    compose(applyMiddleware(reduxLogger, sagaMiddleware)),
 );
 
 sagaMiddleware.run(sagas);
 
 ReactDom.render(
     <Provider store={store}>
-        <ConnectedRouter history={history}>
-            <Switch>
-                <Route component={App} exact={true} path="/"/>
-            </Switch>
-        </ConnectedRouter>
+        <App />
     </Provider>,
     document.getElementById("root"),
 );

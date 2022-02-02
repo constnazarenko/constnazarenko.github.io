@@ -10,17 +10,19 @@
   font-family: 'Titillium Web', 'Roboto', sans-serif;
 
   .container {
-    @include flex-row(flex-start, stretch);
+    @include flex-column(flex-start, stretch);
     max-width: 1000px;
 
     > div:first-child {
-      @include flex-column(flex-start, center);
+      @include flex-row(flex-start, center);
       background-color: $bg-blue;
       color: $text-white;
       flex: 1.5;
-      padding: 0 0 20px;
+      padding: 0 20px;
 
       .name-title {
+        padding: 0 20px;
+
         h1 {
           font-family: 'Roboto Condensed', sans-serif;
           font-size: 2.25rem;
