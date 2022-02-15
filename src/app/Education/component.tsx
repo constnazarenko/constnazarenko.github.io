@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.scss";
+import Logo from "../Logo";
 
 export interface EducationItem {
     company: string;
@@ -30,6 +31,7 @@ class educations extends React.Component<EducationProps> {
                         <div className="education" key={`${education.company}-${education.title}`}>
                             <div className="period">
                                 {education.start} &mdash; {education.end || "now"}
+                                <Logo src="/images/logo_university.jpeg"/>
                             </div>
                             <div className="description">
                                 <h3>{education.title}</h3>
