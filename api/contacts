@@ -4,18 +4,15 @@
     {
         "href": "https://t.me/const_nazarenko",
         "icon": ["fab", "telegram-plane"],
-        "title": "const_nazarenko"
+        "title": "@const_nazarenko"
     },
     {"title": "+380 68 197-84-47", "icon": ["fas", "phone"]},
-    {"title": "github", "icon": ["fab", "github"], "href": "https://github.com/constnazarenko/", "nonprintable": true},
+    {"title": "github", "alt": "//github.com/constnazarenko/", "icon": ["fab", "github"], "href": "https://github.com/constnazarenko/", "nonprintable": true},
     {
         "href": "https://github.com/constnazarenko/constnazarenko.github.io/tree/develop",
         "icon": ["fab", "git"],
-        "title": "code example (this very cv)",
+        "title": "code example",
         "nonprintable": true
     },
-    {"title": "linkedin", "icon": ["fab", "linkedin"], "href": "https://www.linkedin.com/in/const-nazarenko/", "nonprintable": true},
-    {"title": "instagram", "icon": ["fab", "instagram"], "href": "https://instagram.com/const.nazarenko", "nonprintable": true},
-    {"title": "facebook", "icon": ["fab", "facebook"], "href": "https://facebook.com/const.nazarenko", "nonprintable": true},
-    {"title": "I just love icons and list =)", "icon": ["far", "heart"], "nonprintable": true}
+    {"title": "linkedin", "alt": "//linkedin.com/in/const-nazarenko/", "icon": ["fab", "linkedin"], "href": "https://www.linkedin.com/in/const-nazarenko/", "nonprintable": true}
 ]
