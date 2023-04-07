@@ -28,12 +28,11 @@
           font-size: 2.25rem;
           font-weight: lighter;
           text-align: center;
-          text-transform: uppercase;
         }
 
         h2 {
           font-family: 'Roboto', sans-serif;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           font-style: italic;
           font-weight: lighter;
           text-align: center;
@@ -69,6 +68,17 @@
         }
       }
 
+    }
+
+    > .contacts-container {
+      background: rgba(141, 148, 175, 0.27);
+      color: #333;
+      padding-bottom: 1rem;
+      margin-bottom: 0.5rem;
+
+      a {
+        color: #333;
+      }
     }
 
     > div:last-child {

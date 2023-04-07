@@ -1,8 +1,14 @@
 @import '../../variables';
 
 .contacts {
-  margin-left: 3rem;
+  margin-left: 0.3rem;
   min-width: 30ch;
+
+  &.is-printable {
+    a {
+      text-decoration: none;
+    }
+  }
 
   dl {
     margin-top: 1rem;

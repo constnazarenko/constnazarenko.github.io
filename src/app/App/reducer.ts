@@ -1,9 +1,7 @@
-import { HobbiesAction, ProfileAction, SettingsAction } from "../types/actions";
-import { AppGlobalState, Hobby, Profile } from "./component";
+import { ProfileAction, SettingsAction } from "../types/actions";
+import { AppGlobalState, Profile } from "./component";
 import {
     FETCH_FAILURE,
-    FETCH_HOBBY_FAILURE,
-    FETCH_HOBBY_SUCCESS,
     FETCH_REQUEST,
     FETCH_SUCCESS,
     SETTINGS_SWITCH_PRINTABLE,
@@ -15,16 +13,6 @@ export const profile = (state: Profile = {name: "", title: "", summary: ""}, act
             return action.payload;
         case FETCH_FAILURE:
         case FETCH_REQUEST:
-        default:
-            return state;
-    }
-};
-
-export const hobbies = (state: Hobby[] = [], action: HobbiesAction) => {
-    switch (action.type) {
-        case FETCH_HOBBY_SUCCESS:
-            return action.payload;
-        case FETCH_HOBBY_FAILURE:
         default:
             return state;
     }

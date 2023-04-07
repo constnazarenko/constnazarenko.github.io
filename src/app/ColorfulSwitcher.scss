@@ -1,0 +1,135 @@
+@import '../variables';
+
+@function diagonal-to-side-length($s) {
+  @return sqrt($s * $s / 2.2);
+}
+@function diagonal-to-right-margin($s) {
+  @return diagonal-to-side-length($s) / -2;
+}
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+
+  @return $x1 + 0rem;
+}
+
+.colorful-switcher {
+  $sw-height: 2;
+  color: #333333;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: $sw-height + rem;
+  margin-bottom: 1rem;
+
+  @mixin tab-arrow-box ($bgcolor: white, $color: black, $bghover: gray, $hover: white) {
+    background-color: $bgcolor;
+    color: $color;
+
+    &::after {
+      background-color: $bgcolor;
+      content: '';
+      display: block;
+      height: diagonal-to-side-length($sw-height);
+      position: absolute;
+      right: diagonal-to-right-margin($sw-height);
+      transform: rotate(45deg);
+      width: diagonal-to-side-length($sw-height);
+    }
+
+    &:hover {
+      background-color: $bghover;
+      color: $hover;
+
+      &::after {
+        background-color: $bghover;
+      }
+    }
+  }
+
+  @mixin tab-arrow-inverted ($color: white) {
+    border: 1rem solid $color;
+    border-left-color: transparent;
+    border-right: none;
+    content: '';
+    display: block;
+    height: 0;
+    left: -1rem;
+    position: absolute;
+    top: 0;
+    width: 0;
+  }
+
+  .tab {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    min-width: 0;
+    padding-left: 1.5rem;
+    position: relative;
+
+    span {
+      overflow: hidden;
+      text-decoration: underline;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      z-index: 1;
+    }
+
+    &:first-child {
+      border-bottom-left-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+      padding-left: 0.7rem;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    &:nth-child(1) {
+      z-index: 5;
+    }
+
+    &:nth-child(2) {
+      z-index: 4;
+    }
+
+    &:nth-child(3) {
+      z-index: 3;
+    }
+
+    &:nth-child(4) {
+      z-index: 2;
+    }
+
+    &:nth-child(5) {
+      z-index: 1;
+    }
+
+    &.tab-red {
+      @include tab-arrow-box(red);
+    }
+
+    &.tab-yellow {
+      @include tab-arrow-box(yellow);
+    }
+
+    &.tab-green {
+      @include tab-arrow-box(green);
+    }
+
+    &.tab-blue {
+      @include tab-arrow-box(blue);
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

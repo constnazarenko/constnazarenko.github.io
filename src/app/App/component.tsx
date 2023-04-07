@@ -14,16 +14,12 @@ export interface Profile {
     title: string;
     summary: string;
 }
-export interface Hobby {
-    title: string;
-}
 export interface AppGlobalState {
     printable: boolean;
 }
 
 interface AppProps {
     profile: Profile;
-    hobbies: Hobby[];
     load: () => void;
     printable: boolean;
     switchPrintable: (printable: boolean) => void;
@@ -43,11 +39,13 @@ class App extends PureComponent<AppProps> {
                     <div>
                         <Photo src="/images/face_sq.jpg"/>
                         <NameTitle name={name} title={title}/>
+                    </div>
+                    <div className="contacts-container">
                         <Contacts />
                     </div>
                     <div>
                         <a className="switch-printable" onClick={this.togglePrintable}>
-                            {this.props.printable ? "Back to browser-friendly view" : " Printing-friendly view"}
+                            {this.props.printable ? " " : " Printing-friendly view"}
                         </a>
                         <header>
                             <h2>Summary</h2>
