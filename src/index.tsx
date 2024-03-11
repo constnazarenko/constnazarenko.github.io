@@ -1,54 +1,35 @@
-import * as React from "react";
-import { Profiler, StrictMode, Suspense } from "react";
-import { createRoot } from "react-dom/client";
-import { Provider } from "react-redux";
-import { applyMiddleware, compose, createStore } from "redux";
-import { createLogger } from "redux-logger";
-import createSagaMiddleware from "redux-saga";
+import * as React from 'react';
+import { Profiler, StrictMode, Suspense } from 'react';
+import { createRoot } from 'react-dom/client';
 
-import rootReducer from "./reducers";
-import sagas from "./sagas";
+import App from './app/App';
+import { Loading } from './app/Loading';
 
-import App from "./app/App";
-import { Index } from "./app/Loading";
-
-const reduxLogger = createLogger({
-    collapsed: true,
-    diff: true,
-    predicate: () => !!sessionStorage.getItem("enable_redux_logger"),
-});
-const sagaMiddleware = createSagaMiddleware();
-
-const store = createStore(
-    rootReducer(),
-    compose(applyMiddleware(reduxLogger, sagaMiddleware))
-);
-
-sagaMiddleware.run(sagas);
-
-const domNode = document.getElementById("root");
+const domNode = document.getElementById('root');
 const root = createRoot(domNode);
 
-function onRender(
-    id,
-    phase,
-    actualDuration,
-    baseDuration,
-    startTime,
-    commitTime
-) {
-    // Aggregate or log render timings...
-    console.log(id, phase, actualDuration, baseDuration, startTime, commitTime);
-}``
+function onRender(id, phase, actualDuration, baseDuration, startTime, commitTime) {
+  // Aggregate or log render timings...
+  // console.log(id, phase, actualDuration, baseDuration, startTime, commitTime);
+  if (sessionStorage.getItem('showProfiler')) {
+    const style =
+      'background: rgba(0, 0, 128, 0.1); color: lightgray; font-size: 0.75rem; font-weight: bold; -webkit-text-stroke: 1px gray;';
+    console.log(
+      `%c${id}, ${phase}, actual: ${Math.round(actualDuration * 100) / 100}s, base: ${
+        Math.round(baseDuration * 100) / 100
+      }s, start: ${Math.round(startTime * 100) / 100}s, commit: ${Math.round(commitTime * 100) / 100}s `,
+      style,
+    );
+  }
+}
 
 root.render(
-    <Suspense fallback={<Index />}>
-        <Profiler id="StrictMode" onRender={onRender}>
-            <StrictMode>
-                <Provider store={store}>
-                    <App />
-                </Provider>
-            </StrictMode>
-        </Profiler>
-    </Suspense>
+  <Suspense fallback={<Loading />}>
+    <Profiler id="StrictMode" onRender={onRender}>
+      <StrictMode>
+        <App />
+      </StrictMode>
+    </Profiler>
+  </Suspense>,
 );
+export { useCallAPI } from './app/APICalls';
