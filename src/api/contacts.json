@@ -1,0 +1,36 @@
+[
+  { "title": "Málaga, Spain", "icon": ["fas", "map-marker-alt"] },
+  { "title": "Kyiv, Ukraine", "icon": ["fas", "map-marker-alt"] },
+  {
+    "title": "const@nazarenko.es",
+    "icon": ["far", "envelope"],
+    "href": "mailto:const@nazarenko.es"
+  },
+  {
+    "href": "https://t.me/const_nazarenko",
+    "icon": ["fab", "telegram-plane"],
+    "title": "@const_nazarenko"
+  },
+  { "title": "+380 68 197-84-47", "icon": ["fas", "phone"] },
+  { "title": "+34 655 037 887", "icon": ["fab", "whatsapp"] },
+  {
+    "title": "github",
+    "alt": "//github.com/constnazarenko/",
+    "icon": ["fab", "github"],
+    "href": "https://github.com/constnazarenko/",
+    "nonprintable": true
+  },
+  {
+    "href": "https://github.com/constnazarenko/constnazarenko.github.io/tree/develop",
+    "icon": ["fab", "git"],
+    "title": "code example",
+    "nonprintable": true
+  },
+  {
+    "title": "linkedin",
+    "alt": "//linkedin.com/in/const-nazarenko/",
+    "icon": ["fab", "linkedin"],
+    "href": "https://www.linkedin.com/in/const-nazarenko/",
+    "nonprintable": true
+  }
+]

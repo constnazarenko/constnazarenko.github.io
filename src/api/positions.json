@@ -1,0 +1,246 @@
+[
+  {
+    "company": "System2 Fitness",
+    "location": "USA (remote)",
+    "logo": "/assets/static/images/logo_system2_technologies.jpeg",
+    "end": "2025.04",
+    "start": "2023.05",
+    "total": "1 yr 11 mos",
+    "duration": "1 yr 11 mos",
+    "description": "<p>As a senior software engineer, I contributed to the development of the company's product, which included a web-based management panel and a mobile application.</p><p>The platform was designed to enhance the online coaching experience for fitness coaches and their clients, making it more efficient and rewarding.</p><p>My role in the engineering department involved planning and implementing new features while also maintaining and supporting existing ones.</p>",
+    "title": "Senior Software Engineer",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "React Native",
+      "Expo",
+      "MobX",
+      "sCSS",
+      "Node.js"
+    ],
+    "infrastructure": [
+      "Webpack",
+      "Firebase",
+      "Firestore",
+      "GitHub",
+      "Cloud functions"
+    ],
+    "management": ["Linear", "Figma", "Notion"]
+  },
+  {
+    "company": "Qvantel",
+    "location": "Finland (remote)",
+    "logo": "/assets/static/images/logo_qvantel.jpeg",
+    "end": "2023.01",
+    "start": "2020.08",
+    "total": "4 yrs 11 mos",
+    "duration": "2 yr 6 mos",
+    "description": "<p>Acting as an architect within the R&D department, I was taking part in the creation of Qvantel Flex BSS — the next generation of no-code platform for telecom operators.</p><p>Qvantel Flex BSS offers unique capabilities that dramatically reduce the time, effort, and cost needed to implement Business implement business changes in a matter of hours instead of weeks and months.</p><p>Also, I'm building various kinds of POCs, mostly based on the Qvantel Flex BSS solution.</p>",
+    "title": "Senior Software Architect",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Redux",
+      "sCSS",
+      "Node.js",
+      "GoLang"
+    ],
+    "infrastructure": [
+      "Webpack",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "Bitbucket",
+      "Artifactory",
+      "Multichannel",
+      "Microservices"
+    ],
+    "management": ["Confluence", "Jira", "Jama"]
+  },
+  {
+    "company": null,
+    "end": "2020.08",
+    "start": "2019.12",
+    "duration": "9 mos",
+    "description": "<p>As a software engineer, I'm developing Proof-Of-Concepts (POC) using various technologies, including TypeScript, React, Python, Node.js, etc.</p>",
+    "title": "Senior Software Engineer",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Redux",
+      "Python",
+      "Node.js",
+      "Jest/Enzyme",
+      "sCSS"
+    ],
+    "infrastructure": [
+      "Webpack",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "Bitbucket",
+      "Artifactory",
+      "Multichannel",
+      "Microservices"
+    ],
+    "management": ["Confluence", "Jira", "Jama"]
+  },
+  {
+    "company": null,
+    "end": "2019.12",
+    "start": "2018.03",
+    "duration": "1 yr 10 mos",
+    "description": "<p>Acting as an FE engineer for a couple of teams from different locations (Finland, Kyiv).</p><p>As a developer, I took part in the process of bringing applications to an up-to-date technology stack.</p><p>React-router, react-redux, and React itself were moved to the newest versions.</p><p>Some parts of the project were refactored and some rewritten to achieve better optimization and usability.</p><p>Test coverage with Jest/Enzyme was improved from 20% to 86%.</p><p>During 10 month the whole codebase (300k + lines) was migrated to TypeScript. Instead of Alt (flux state management), applications were moved to use react-redux.</p><p>Significant performance improvements were achieved.</p>",
+    "title": "Senior Frontend engineer",
+    "technologies": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Redux",
+      "Jest/Enzyme",
+      "sCSS"
+    ],
+    "infrastructure": [
+      "Webpack",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "Bitbucket",
+      "Artifactory",
+      "Multichannel",
+      "Microservices"
+    ],
+    "management": ["Scrum", "Confluence", "Jira", "Jama"]
+  },
+  {
+    "company": "GSEG - Global Sports Entertainment Group, Inc.",
+    "location": "Kyiv, Ukraine",
+    "logo": "/assets/static/images/logo_gseg.jpeg",
+    "end": "2018.03",
+    "start": "2017.01",
+    "duration": "1 yr 3 mos",
+    "description": "<p>As a part of a team, I worked as a Stack Developer with a technology stack of React, Redux, Python, and PostgreSQL.</p><p>. As a result, we built and successfully launched a gaming platform in partnership with OurGame, a Chinese gaming company.</p><p>Application was launched on the Chinese market for 500 million customers.</p>",
+    "title": "Senior full-stack developer",
+    "technologies": ["Python", "React", "Redux", "Jest/Enzyme", "sCSS"],
+    "infrastructure": ["Webpack", "Bitbucket", "Docker"],
+    "management": ["Scrum", "Jira"]
+  },
+  {
+    "company": "Advanced Hosting",
+    "location": "Kyiv, Ukraine",
+    "logo": "/assets/static/images/logo_ah.jpeg",
+    "end": "2016.12",
+    "start": "2015.03",
+    "total": "6 yrs 2 mos",
+    "duration": "1 yr 10 mos",
+    "description": "<p>I’ve joined a team to build a unified control panel for the company’s diverse services — CDN, VDS, Domain names, DNS, etc.</p>",
+    "title": "Software Architect, Senior frontend developer",
+    "technologies": ["AngularJS", "React", "jQuery", "CSS"],
+    "infrastructure": ["Webpack", "Bitbucket"],
+    "management": ["Confluence", "Jira"]
+  },
+  {
+    "company": null,
+    "end": "2015.03",
+    "start": "2014.01",
+    "duration": "1 yr 3 mos",
+    "description": "<p>I’ve built a speed test system for websites, CDN, and Cloud resources for the company’s needs to ensure quality and track performance.</p><p>For this matter, I used over 100 servers all over the world for gathering statistics and monitoring uptime, accessibility and resolving routes (for CDN) of company’s servers and resources.</p><p>As a separate feature, I’ve created a real-life users speed testing to compare with data from servers located in data centers.</p>",
+    "title": "Software Architect, Senior python developer",
+    "technologies": ["Python", "PostgreSQL", "JavaScript"],
+    "management": ["Scrum", "Jira"]
+  },
+  {
+    "company": null,
+    "end": "2014.01",
+    "start": "2010.11",
+    "duration": "3 yrs 3 mos",
+    "description": "<p>I’ve created a business process management (BPM) system with wide functionality.</p><ul><li>business process tracking;</li><li>two-way integration with partners’ ticket systems;</li><li>aggregation, categorizing, and reporting of servers incidents (via connected automated monitoring, systems);</li><li>communications and notification system for the staff;</li></ul>",
+    "title": "Software Architect, Senior full-stack developer",
+    "technologies": [
+      "Python",
+      "PHP",
+      "XSLT",
+      "xHTML",
+      "AngularJS",
+      "React",
+      "jQuery",
+      "CSS"
+    ],
+    "management": ["Scrum", "Jira"]
+  },
+  {
+    "company": "Striped urchin",
+    "location": "Kyiv, Ukraine",
+    "logo": "/assets/static/images/logo_striped_urchin.png",
+    "end": "2010.11",
+    "start": "2008.10",
+    "duration": "2 yrs 2 mos",
+    "description": "<p>Acting as an architect, I've designed the backend for a dating social platform, including a relational database structure with extensive internal logic.</p>",
+    "title": "CTO, Co-founder",
+    "technologies": [
+      "MySQL",
+      "PHP",
+      "XSLT",
+      "xHTML",
+      "JavaScript",
+      "jQuery",
+      "CSS"
+    ],
+    "infrastructure": ["Ngnix", "XMPP"]
+  },
+  {
+    "company": "Overdesign",
+    "location": "Kyiv, Ukraine",
+    "logo": "/assets/static/images/logo_postmodern.jpeg",
+    "end": "2008.10",
+    "start": "2007.08",
+    "duration": "1 yr 3 mos",
+    "description": "<p>Acting as an architect I've designed the backend for a dating social platform including a relational database structure with extensive internal logic.</p>",
+    "title": "Software Architect",
+    "technologies": ["PHP", "MySQL", "XSLT", "JavaScript"]
+  },
+  {
+    "company": "Someecards, Inc.",
+    "location": "USA (remote)",
+    "logo": "/assets/static/images/logo_ee.jpeg",
+    "end": "2007.08",
+    "start": "2007.02",
+    "duration": "7 mos",
+    "description": "<p>Acting as an Architect, I've designed a system for the creation of online postcards.</p><p>As a full-stack developer, I've fully implemented my design, and the project was successfully launched.</p>",
+    "title": "Software Architect, Full-stack developer",
+    "technologies": ["xHTML", "CSS", "XSLT", "JavaScript", "PHP", "MySQL"]
+  },
+  {
+    "company": "Reaktivate",
+    "location": "Kyiv, Ukraine",
+    "logo": "/assets/static/images/logo_reaktivate.jpeg",
+    "end": "2007.02",
+    "start": "2006.01",
+    "duration": "1 yr 2 mos",
+    "description": "<p>As a frontend engineer, I was translating designs from Photoshop into HTML and creating websites with the company's BE framework using XSLT translations.</p>",
+    "title": "Frontend engineer",
+    "technologies": ["XSLT", "xHTML", "JavaScript", "CSS", "PHP", "MooTools"]
+  },
+  {
+    "company": "World Web Studio",
+    "location": "Kyiv, Ukraine",
+    "logo": "/assets/static/images/logo_wws.jpeg",
+    "end": "2006.01",
+    "start": "2004.08",
+    "duration": "1 yr 6 mos",
+    "description": "<p>As a frontend engineer, I was involved in the building of web services of Mobile Network Operator (MNO) UMC (nowadays aka Vodafone) and its sub-product Mobile Virtual Network Operator (MVNO) Jeans.</p>",
+    "title": "Frontend engineer",
+    "technologies": ["PHP", "HTML", "JavaScript", "CSS"]
+  },
+  {
+    "company": "Freelance",
+    "location": "Kyiv, Ukraine",
+    "logo": "/assets/static/images/logo_ensis.gif",
+    "end": "2004.08",
+    "start": "2000.01",
+    "duration": "4 yrs 8 mos",
+    "description": "<p>As a freelance web developer, I created a few medium-sized internet projects and a dozen small ones.</p><p>Medium projects included a gaming portal, a music portal, and a history research web community.</p>",
+    "title": "Web Developer",
+    "technologies": ["PHP", "HTML", "JavaScript", "CSS"]
+  }
+]

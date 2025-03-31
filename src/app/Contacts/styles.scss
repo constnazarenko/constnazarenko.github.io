@@ -1,5 +1,3 @@
-@import '../../variables';
-
 .contacts {
   margin-left: 0.3rem;
   min-width: 30ch;
@@ -27,7 +25,7 @@
       margin-bottom: 0;
 
       a {
-        color: $text-white;
+        color: var(--text-white);
         text-decoration: underline;
       }
     }

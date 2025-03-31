@@ -1,5 +1,4 @@
-@import '../../mixins';
-@import '../../variables';
+@use "../../mixins" as mixins;
 
 .skills {
   width: 100%;
@@ -13,7 +12,7 @@
     .skill-title {
       font-size: 1.2em;
       height: 20px;
-      margin: 0 0 .5em 1em;
+      margin: 0 0 0.5em 1em;
       padding-right: 1em;
       width: 100px;
     }
@@ -24,7 +23,7 @@
     }
 
     .skill-rating {
-      @include flex-row(center);
+      @include mixins.flex-row(center);
       height: 15px;
       list-style: none;
       margin: 0;
@@ -32,7 +31,7 @@
       width: 100%;
 
       li {
-        background-color: $text-white;
+        background-color: var(--text-white);
         display: block;
         height: 15px;
         margin-right: 3px;

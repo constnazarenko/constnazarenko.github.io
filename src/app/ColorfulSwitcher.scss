@@ -1,5 +1,3 @@
-@import '../variables';
-
 @function diagonal-to-side-length($s) {
   @return sqrt($s * $s / 2.2);
 }
@@ -26,13 +24,18 @@
   height: $sw-height + rem;
   margin-bottom: 1rem;
 
-  @mixin tab-arrow-box ($bgcolor: white, $color: black, $bghover: gray, $hover: white) {
+  @mixin tab-arrow-box(
+    $bgcolor: white,
+    $color: black,
+    $bghover: gray,
+    $hover: white
+  ) {
     background-color: $bgcolor;
     color: $color;
 
     &::after {
       background-color: $bgcolor;
-      content: '';
+      content: "";
       display: block;
       height: diagonal-to-side-length($sw-height);
       position: absolute;
@@ -51,11 +54,11 @@
     }
   }
 
-  @mixin tab-arrow-inverted ($color: white) {
+  @mixin tab-arrow-inverted($color: white) {
     border: 1rem solid $color;
     border-left-color: transparent;
     border-right: none;
-    content: '';
+    content: "";
     display: block;
     height: 0;
     left: -1rem;

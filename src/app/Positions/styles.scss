@@ -1,28 +1,36 @@
-@import '../../mixins';
-@import '../../variables';
+@use "../../mixins" as mixins;
 
 .positions {
   .position {
-    @include flex-row(stretch, flex-start);
+    @include mixins.flex-row(stretch, flex-start);
     margin-bottom: 25px;
 
     .period,
     .description {
       .dates,
       .date-total {
-        color: $text-gray;
+        color: var(--text-gray);
         font-size: 0.9em;
         font-style: normal;
         font-weight: lighter;
         line-height: 0.9em;
         white-space: nowrap;
       }
+      .location {
+        color: var(--text-gray);
+        font-size: 1em;
+        font-style: normal;
+        font-weight: lighter;
+        line-height: 1em;
+        white-space: nowrap;
+        margin-bottom: 5px;
+      }
 
       .duration {
         font-size: 0.75rem;
 
         &::before {
-          content: '\00B7';
+          content: "\00B7";
           margin: 0 5px;
         }
       }
@@ -34,19 +42,18 @@
       padding: 0 15px 0 0;
 
       h4 {
-        color: $text-darkblue;
+        color: var(--text-darkblue);
         font-size: 1.1em;
         font-weight: normal;
+        margin-bottom: 5px;
       }
-
-
 
       &.is-role .dates {
         margin-left: 50px;
         position: relative;
 
         &::before {
-          content: '';
+          content: "";
           width: 5px;
           height: 5px;
           border-radius: 50%;
@@ -63,7 +70,7 @@
       flex: 3.2;
 
       h3 {
-        color: $text-darkgray;
+        color: var(--text-darkgray);
         font-size: 1.3em;
         font-weight: bold;
         margin-bottom: 0;
@@ -83,7 +90,6 @@
           font-size: 0.75rem;
           margin: 0.5rem 0 0;
           padding: 0;
-
         }
 
         ul {
@@ -100,7 +106,7 @@
             margin-right: 0.5rem;
 
             &:not(:last-child)::after {
-              content: ',';
+              content: ",";
             }
           }
         }

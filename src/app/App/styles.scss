@@ -1,22 +1,21 @@
-@import '../../mixins';
-@import '../../variables';
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700');
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Exo+2:100,300,400,500,700');
+@use "../../mixins" as mixins;
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:100,300,400,500,700");
 
 .wrapper {
-  @include flex-row(center);
-  font-family: 'Titillium Web', 'Roboto', sans-serif;
+  @include mixins.flex-row(center);
+  font-family: "Titillium Web", "Roboto", sans-serif;
 
   .container {
-    @include flex-column(flex-start, stretch);
+    @include mixins.flex-column(flex-start, stretch);
     max-width: 1000px;
 
     > div:first-child {
-      @include flex-row(flex-start, center);
-      background-color: $bg-blue;
-      color: $text-white;
+      @include mixins.flex-row(flex-start, center);
+      background-color: var(--bg-blue);
+      color: var(--text-white);
       flex: 1.5;
       padding: 0 20px;
 
@@ -24,14 +23,14 @@
         padding: 0 20px;
 
         h1 {
-          font-family: 'Roboto Condensed', sans-serif;
+          font-family: "Roboto Condensed", sans-serif;
           font-size: 2.25rem;
           font-weight: lighter;
           text-align: center;
         }
 
         h2 {
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 1.2rem;
           font-style: italic;
           font-weight: lighter;
@@ -40,15 +39,15 @@
       }
 
       header {
-        @include flex-row(flex-start, flex-start);
+        @include mixins.flex-row(flex-start, flex-start);
         align-self: stretch;
         margin: 1.4em 20px 0 1em;
         position: relative;
 
         h2 {
-          background: $bg-blue;
+          background: var(--bg-blue);
           display: inline-block;
-          font-family: 'Roboto Condensed', sans-serif;
+          font-family: "Roboto Condensed", sans-serif;
           font-size: 2em;
           font-weight: bold;
           padding: 0 0.5em 0 0;
@@ -56,8 +55,8 @@
         }
 
         &::after {
-          border-bottom: 1px solid $delimiter-gray;
-          content: '';
+          border-bottom: 1px solid var(--delimiter-gray);
+          content: "";
           display: block;
           left: 0;
           position: absolute;
@@ -67,7 +66,6 @@
           z-index: 0;
         }
       }
-
     }
 
     > .contacts-container {
@@ -95,19 +93,19 @@
       }
 
       hr {
-        background-color: $delimiter-gray;
+        background-color: var(--delimiter-gray);
       }
 
       header {
-        @include flex-row(flex-start, center);
+        @include mixins.flex-row(flex-start, center);
         position: relative;
         width: 100%;
 
         h2 {
-          background: $bg-white;
-          color: $text-darkgray;
+          background: var(--bg-white);
+          color: var(--text-darkgray);
           display: inline-block;
-          font-family: 'Roboto Condensed', sans-serif;
+          font-family: "Roboto Condensed", sans-serif;
           font-size: 1.6em;
           font-weight: bold;
           padding: 0 0.5em 0 0;
@@ -115,8 +113,8 @@
         }
 
         &::after {
-          border-bottom: 1px solid $delimiter-gray;
-          content: '';
+          border-bottom: 1px solid var(--delimiter-gray);
+          content: "";
           display: block;
           left: 0;
           position: absolute;
@@ -127,6 +125,5 @@
         }
       }
     }
-
   }
 }

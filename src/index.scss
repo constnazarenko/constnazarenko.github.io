@@ -1,7 +1,15 @@
-@import './variables';
+:root {
+  --bg-white: #ffffff;
+  --bg-blue: #425370;
+  --text-white: #fffafa;
+  --text-gray: #999;
+  --text-darkblue: #425370;
+  --text-darkgray: #555;
+  --delimiter-gray: #dedede;
+}
 
 body {
-  background-color: $bg-white;
+  background-color: var(--bg-white);
   font-size: 16px;
   padding: 0;
   min-width: 750px;

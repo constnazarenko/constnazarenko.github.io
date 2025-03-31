@@ -1,13 +1,12 @@
-@import "../../mixins";
-@import "../../variables";
+@use "../../mixins" as mixins;
 
 .educations {
   .education {
-    @include flex-row(stretch, flex-start);
+    @include mixins.flex-row(stretch, flex-start);
     margin-bottom: 25px;
 
     .period {
-      color: $text-gray;
+      color: var(--text-gray);
       flex: 0.8;
       font-size: 0.9em;
       font-style: normal;
@@ -21,19 +20,18 @@
       flex: 3.2;
 
       h3 {
-        color: $text-darkgray;
+        color: var(--text-darkgray);
         font-size: 1.3em;
         margin-bottom: 0;
       }
 
       h4 {
-        color: $text-darkblue;
+        color: var(--text-darkblue);
         font-size: 1.1em;
         font-weight: normal;
       }
 
       article {
-
       }
     }
   }
