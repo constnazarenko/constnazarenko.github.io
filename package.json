@@ -90,7 +90,7 @@
     "check-types": "tsc",
     "compile": "tsc -p .",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -b master --git git",
+    "deploy": "gh-pages -d dist -b release --git git --cname nazarenko.es",
     "prepare": "husky",
     "pretest": "npm run compile",
     "start": "npm run start:dev",
