@@ -21,12 +21,6 @@
     "nonprintable": true
   },
   {
-    "href": "//github.com/constnazarenko/",
-    "icon": ["fab", "git"],
-    "title": "github",
-    "nonprintable": true
-  },
-  {
     "title": "linkedin",
     "alt": "//linkedin.com/in/const-nazarenko/",
     "icon": ["fab", "linkedin"],
