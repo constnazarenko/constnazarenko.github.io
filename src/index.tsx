@@ -20,8 +20,7 @@ function onRender(
 ) {
   // Aggregate or log render timings...
   console.log(id, phase, actualDuration, baseDuration, startTime, commitTime);
-}
-``;
+};
 
 root.render(
   <Suspense fallback={<Index />}>
