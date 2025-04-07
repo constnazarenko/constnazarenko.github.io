@@ -1,19 +1,22 @@
 @use "../../mixins" as mixins;
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Exo+2:100,300,400,500,700");
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700";
+@import "https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700";
+@import "https://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,500,700";
+@import "https://fonts.googleapis.com/css?family=Exo+2:100,300,400,500,700";
 
 .wrapper {
   @include mixins.flex-row(center);
-  font-family: "Titillium Web", "Roboto", sans-serif;
+
+  font-family: "Titillium Web", Roboto, sans-serif;
 
   .container {
     @include mixins.flex-column(flex-start, stretch);
+
     max-width: 1000px;
 
     > div:first-child {
       @include mixins.flex-row(flex-start, center);
+
       background-color: var(--bg-blue);
       color: var(--text-white);
       flex: 1.5;
@@ -30,7 +33,7 @@
         }
 
         h2 {
-          font-family: "Roboto", sans-serif;
+          font-family: Roboto, sans-serif;
           font-size: 1.2rem;
           font-style: italic;
           font-weight: lighter;
@@ -40,6 +43,7 @@
 
       header {
         @include mixins.flex-row(flex-start, flex-start);
+
         align-self: stretch;
         margin: 1.4em 20px 0 1em;
         position: relative;
@@ -69,7 +73,7 @@
     }
 
     > .contacts-container {
-      background: rgba(141, 148, 175, 0.27);
+      background: rgb(141 148 175 / 27%);
       color: #333;
       padding-bottom: 1rem;
       margin-bottom: 0.5rem;
@@ -79,18 +83,20 @@
       }
     }
 
+    .switch-printable {
+      text-align: right;
+
+      a {
+        border-bottom: 1px dashed;
+        color: #425370;
+        cursor: pointer;
+        font-size: 0.75rem;
+      }
+    }
+
     > div:last-child {
       flex: 3.5;
       padding: 5px 5px 5px 15px;
-
-      .switch-printable {
-        border-bottom: 1px dashed;
-        clear: right;
-        color: #425370;
-        cursor: pointer;
-        float: right;
-        font-size: 0.75rem;
-      }
 
       hr {
         background-color: var(--delimiter-gray);
@@ -98,6 +104,7 @@
 
       header {
         @include mixins.flex-row(flex-start, center);
+
         position: relative;
         width: 100%;
 
