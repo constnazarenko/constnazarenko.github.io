@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import { PureComponent } from "react";
 import "./ColorfulSwitcher.scss";
 export interface SwitchTab {
     color: "red" | "yellow" | "green" | "blue";
@@ -8,6 +8,6 @@ interface ColorfulSwitcherProps {
     tabs: SwitchTab[];
 }
 declare class ColorfulSwitcher extends PureComponent<ColorfulSwitcherProps> {
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }
 export default ColorfulSwitcher;

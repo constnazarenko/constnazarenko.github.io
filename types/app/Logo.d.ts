@@ -1,9 +1,9 @@
-import React, { PureComponent } from "react";
+import { PureComponent } from "react";
 import "./Logo.scss";
 interface LogoProps {
     src: string;
 }
 declare class Logo extends PureComponent<LogoProps> {
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }
 export default Logo;

@@ -1,3 +1,2 @@
-import React from "react";
 import "./styles.scss";
-export declare function Index(): React.JSX.Element;
+export declare function Index(): import("react/jsx-runtime").JSX.Element;

@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import { PureComponent } from "react";
 import "./List.scss";
 interface ListItem {
     title: string;
@@ -8,6 +8,6 @@ interface ListProps {
     items: ListItem[];
 }
 declare class List extends PureComponent<ListProps> {
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }
 export default List;

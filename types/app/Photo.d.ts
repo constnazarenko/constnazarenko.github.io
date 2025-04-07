@@ -1,9 +1,9 @@
-import React, { PureComponent } from "react";
+import { PureComponent } from "react";
 import "./Photo.scss";
 interface PhotoProps {
     src: string;
 }
 declare class Photo extends PureComponent<PhotoProps> {
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }
 export default Photo;

@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import { PureComponent } from "react";
 import "./styles.scss";
 export interface Skill {
     title: string;
@@ -7,6 +7,6 @@ export interface Skill {
     description: string;
 }
 declare class Skills extends PureComponent {
-    render(): React.JSX.Element;
+    render(): import("react/jsx-runtime").JSX.Element;
 }
 export default Skills;
