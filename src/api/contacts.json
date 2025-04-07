@@ -1,18 +1,22 @@
 [
-  { "title": "Málaga, Spain", "icon": ["fas", "map-marker-alt"] },
+  { "entity": "Residence", "title": "Málaga, Spain", "icon": ["fas", "map-marker-alt"] },
   {
+    "entity": "Email",
     "title": "const@nazarenko.es",
     "icon": ["far", "envelope"],
     "href": "mailto:const@nazarenko.es"
   },
   {
+    "entity": "Telegram",
     "href": "https://t.me/const_nazarenko",
     "icon": ["fab", "telegram-plane"],
     "title": "@const_nazarenko"
   },
-  { "title": "+380 68 197-84-47", "icon": ["fas", "phone"] },
-  { "title": "+34 655 037 887", "icon": ["fab", "whatsapp"] },
+  { "entity": "Phone (ua)", "title": "+380 68 197-84-47", "icon": ["fas", "phone"] },
+  { "entity": "Phone (es)", "title": "+34 655 037 887", "icon": ["fab", "whatsapp"] },
+  { "entity": "WhatsApp", "title": "+34 655 037 887", "icon": ["fab", "whatsapp"] },
   {
+    "entity": "GitHub",
     "title": "github",
     "alt": "//github.com/constnazarenko/",
     "icon": ["fab", "github"],
@@ -20,6 +24,7 @@
     "nonprintable": true
   },
   {
+    "entity": "LinkedIn",
     "title": "linkedin",
     "alt": "//linkedin.com/in/const-nazarenko/",
     "icon": ["fab", "linkedin"],

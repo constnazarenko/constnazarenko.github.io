@@ -1,12 +1,12 @@
-import React from "react";
-import Contacts from "../Contacts";
-import Education from "../Education";
-import NameTitle from "../NameTitle";
-import Photo from "../Photo";
-import Positions from "../Positions";
+import React from 'react';
 
-import "./styles.scss";
-import profile from "../../api/profile.json";
+import profile from '../../api/profile.json';
+import Contacts from '../Contacts';
+import Education from '../Education';
+import NameTitle from '../NameTitle';
+import Photo from '../Photo';
+import Positions from '../Positions';
+import './styles.scss';
 
 export interface Profile {
   name: string;
@@ -35,12 +35,12 @@ const App: React.FC = () => {
           <NameTitle name={name} title={title} />
         </div>
         <div className="contacts-container">
-          <Contacts isPrintable={isPrintable} />
+          <Contacts name={name} title={title} isPrintable={isPrintable} />
+        </div>
+        <div className="switch-printable">
+          <a onClick={togglePrintable}>{isPrintable ? ' ' : ' Printing-friendly view'}</a>
         </div>
         <div>
-          <a className="switch-printable" onClick={togglePrintable}>
-            {isPrintable ? " " : " Printing-friendly view"}
-          </a>
           <header>
             <h2>Summary</h2>
           </header>
