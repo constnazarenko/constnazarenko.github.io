@@ -12,9 +12,7 @@
     "icon": ["fab", "telegram-plane"],
     "title": "@const_nazarenko"
   },
-  { "entity": "Phone (ua)", "title": "+380 68 197-84-47", "icon": ["fas", "phone"] },
-  { "entity": "Phone (es)", "title": "+34 655 037 887", "icon": ["fab", "whatsapp"] },
-  { "entity": "WhatsApp", "title": "+34 655 037 887", "icon": ["fab", "whatsapp"] },
+  { "entity": "Phone / WhatsApp", "title": "+34 655 037 887", "icon": ["fab", "whatsapp"] },
   {
     "entity": "GitHub",
     "title": "github",

@@ -27,8 +27,7 @@ interface ContactsProps {
 }
 
 const copiableContants = contacts
-  .filter((contact) => !contact.nonprintable)
-  .map((contact) => `${contact.entity}: ${contact.title}`)
+  .map((contact) => `${contact.entity}: ${!contact.nonprintable ? contact.title : contact.alt}`)
   .join('\n');
 
 const Contacts: React.FC<ContactsProps> = ({ name, title, isPrintable }) => (
