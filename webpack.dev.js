@@ -59,12 +59,6 @@ module.exports = merge(common, {
       // watch: {} (options for the `watch` option you can find https://github.com/paulmillr/chokidar)
       watch: true,
     },
-    port: 3012,
-    proxy: [
-      {
-        context: ['/mockServiceWorker.js', 'mockServiceWorker.js'],
-        target: 'http://localhost:3004/assets/static',
-      },
-    ],
+    port: 3021,
   },
 });
