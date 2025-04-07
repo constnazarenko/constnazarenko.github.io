@@ -1,6 +1,5 @@
 [
   { "title": "Málaga, Spain", "icon": ["fas", "map-marker-alt"] },
-  { "title": "Kyiv, Ukraine", "icon": ["fas", "map-marker-alt"] },
   {
     "title": "const@nazarenko.es",
     "icon": ["far", "envelope"],
