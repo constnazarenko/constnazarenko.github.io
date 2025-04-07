@@ -1,6 +1,6 @@
 .photo-wrapper {
   border: 1px solid #aaa;
-  border-radius: 100%;
+  border-radius: 20px;
   height: 10rem;
   margin: 20px 0;
   padding: 4px;
@@ -9,7 +9,7 @@
   .photo {
     background: #18418b center;
     background-size: contain;
-    border-radius: 100%;
+    border-radius: 30px;
     height: 100%;
     width: 100%;
   }

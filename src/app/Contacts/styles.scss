@@ -19,6 +19,13 @@
       color: #425370;
       cursor: pointer;
       font-size: 0.75rem;
+
+      &.icon-check::before {
+        position: absolute;
+        color: var(--text-success);
+        font-size: 1.5em;
+        left: -1.5em;
+      }
     }
   }
 
@@ -26,13 +33,19 @@
     margin-top: 1rem;
     display: grid;
     grid-template-columns: max-content 1fr;
-    gap: 0.125rem 0.25rem;
+    gap: 0.125rem 0;
     align-items: start;
 
     dt {
-      font-size: 1.1rem;
       margin: 0 0.5rem 0 1.25rem;
-      text-align: right;
+      width: 0.875rem;
+      position: relative;
+
+      &::before {
+        font-size: 1.1rem;
+        position: absolute;
+        right: 0;
+      }
     }
 
     dd {
