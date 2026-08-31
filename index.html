@@ -10,11 +10,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@200..900&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/index-DbuRq4Na.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BcFa0ZG2.css">
+    <script type="module" crossorigin src="/assets/index-CFOloMza.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BEYlfY7h.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <style>
+        body {
+          padding: 0;
+          margin: 0;
+          background-color: #151515;
+        }
+        @keyframes hmpg-boot-spin {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes hmpg-boot-fade {
+          0%,
+          100% {
+            opacity: 0.35;
+          }
+          50% {
+            opacity: 1;
+          }
+        }
+        .hmpg-boot {
+          width: 100dvw;
+          height: 100dvh;
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+          justify-content: center;
+          align-items: center;
+          color: #acacca;
+          font-family: system-ui, sans-serif;
+        }
+        .hmpg-boot-ring {
+          width: 3.5rem;
+          height: 3.5rem;
+          border: 3px solid #1b2a4a;
+          border-top-color: #51c3c4;
+          border-radius: 50%;
+          animation: hmpg-boot-spin 900ms linear infinite;
+        }
+        .hmpg-boot-label {
+          font-size: 0.75rem;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          animation: hmpg-boot-fade 2s ease-in-out infinite;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .hmpg-boot-ring,
+          .hmpg-boot-label {
+            animation: none;
+          }
+        }
+      </style>
+        <div class="hmpg-boot">
+        <div class="hmpg-boot-ring"></div>
+        <div class="hmpg-boot-label">Starting...</div>
+      </div>
+    </div>
     <script>
       if (typeof process === 'undefined') {
         (typeof globalThis !== 'undefined' ? globalThis : self).process = { env: {}, cwd: function() { return '/'; }, browser: true };
